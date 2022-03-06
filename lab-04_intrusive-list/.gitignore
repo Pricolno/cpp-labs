@@ -1,0 +1,12 @@
+/obj
+/lab-04_intrusive-list
+
+/cmake-build*/
+/build/
+/_build/
+
+MK
+*.sw*
+lab-04_intrusive-list
+clist
+

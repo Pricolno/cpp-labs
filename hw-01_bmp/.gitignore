@@ -1,0 +1,10 @@
+/build/
+/_build/
+
+/bin/
+/hw-01_bmp
+
+*.sw*
+hw_01
+hw_01_bmp
+rotlena.bmp

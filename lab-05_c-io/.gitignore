@@ -1,0 +1,14 @@
+/obj
+/lab-04_intrusive-list
+
+/cmake-build*/
+/build/
+/_build/
+
+*.sw*
+lab-05_c-io
+out.bin
+out.txt
+test.txt
+
+
