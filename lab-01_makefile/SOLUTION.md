@@ -1,0 +1,2 @@
+Чтобы сделать ошибку multiple definition, уберите комментарий с функции doComputation в main.c
+Чтобы сделать ошибку undefined reference, уберите комментарий с функции unresolvedFunc и её использования в main.c
