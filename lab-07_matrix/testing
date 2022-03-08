@@ -1,0 +1,94 @@
+init a 2 2
+print a
+set a 0 0 1
+set a 0 1 1
+set a 1 1 1
+cp_init b a
+print b
+init c 1 6
+print c
+= c a
+print c
+* c a
++= a a
+== a b
+== b c
+!= a c
+set a 0 0 13
+-= c a
+print c
+
+
+init a 2 2
+print a
+0 0
+0 0
+set a 0 0 1
+set a 0 1 1
+set a 1 1 1
+cp_init b a
+print b
+1 1
+0 1
+init c 1 6
+# c
+1 6
+print c
+0 0 0 0 0 0
+= c a
+print c
+1 1
+0 1
+* c a
+1 2
+0 1
++= a a
+== a b
+0
+== b c
+1
+!= a c
+1
+set a 0 0 13
+-= c a
+print c
+-12 -1
+0 -1
+exit
+
+////////////
+
+init a 2 2
+print a
+set a 0 0 1
+set a 0 1 1
+set a 1 1 1
+
+print a
+
+init b 2 2
+set b 0 0 1
+set b 0 1 1
+set b 1 1 1
+print b
+
+* a b
+
+
+
+
+///////////
+
+init b 2 2
+set b 0 0 1
+set b 0 1 10
+set b 1 1 20
+
+init a 2 2
+set a 0 0 1
+set a 0 1 1
+set a 1 1 1
+
+- a b
+
+* a b
