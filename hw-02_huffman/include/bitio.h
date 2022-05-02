@@ -1,0 +1,43 @@
+#pragma once
+
+#include <iosfwd>
+
+namespace bit_io {
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+class BitInputStream {
+public:
+	BitInputStream(std::istream &_in);
+	~BitInputStream();
+
+	bool read_bit();
+
+private:
+	std::istream &in;
+	char buffer, bit_mask;
+	unsigned char buf_pos;
+
+	void update_buffer();
+};
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+class BitOutputStream {
+public:
+	BitOutputStream(std::ostream &_out);
+	~BitOutputStream();
+
+	void write_bit(bool bit);
+
+private:
+	std::ostream &out;
+	char buffer, bit_mask;
+	unsigned char buf_pos;
+
+	void release_buffer();
+};
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+}
